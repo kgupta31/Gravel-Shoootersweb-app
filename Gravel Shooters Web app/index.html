@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/main.css" />
+</head>
+<body>
+    <h1>Gravel Shooters Quick Quote Calculator</h1>
+    <form id="quote-form">
+        <table>
+            <tr>
+                <td>
+                    <label for="job-addr1">Enter job address:</label>
+                </td>
+                <td>
+                    <input type="text" name="job-addr1" id="job-addr1" placeholder="Address"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="job-addr2"></label>
+                </td>
+                <td>
+                    <input type="text" name="job-addr1" id="job-addr2" placeholder="City"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="job-addr3"></label>
+                </td>
+                <td>
+                    <input type="text" name="job-addr1" id="job-addr3" placeholder="Zip"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="mat-type">Select material type:</label>
+                </td>
+                <td>
+                    <select name="mat-type" id="mat-type">
+                        <option selected name="3/8 scr Pink Coral" value=10>3/8" scr Pink Coral</option>
+                        <option name="1/2 scr Pink Coral" value=18>1/2" scr Pink Coral</option>
+                        <option name="3/4 scr Pink Coral" value=20>3/4" scr Pink Coral</option>
+                        <option name="3/8 scr Desert Gold" value=10>3/8" scr Desert Gold</option>                    
+                        <option name="1/2 scr Desert Gold" value=18>1/2" scr Desert Gold</option>                    
+                        <option name="3/4 scr Desert Gold" value=20>3/4" scr Desert Gold</option>                    
+                        <option name="1/4 minus Desert Gold" value=3>1/4" minus Desert Gold</option>                    
+                        <option name="3/8 minus Desert Gold" value=3>3/8" minus Desert Gold</option>                    
+                        <option name="1/2 minus Desert Gold" value=10>1/2" minus Desert Gold</option>                    
+                        <option name="1 minus Desert Gold" value=10>1" minus Desert Gold</option>
+                        <option name="1/4 minus Red" value=3>1/4" minus Red</option>                                        
+                        <option name="3/8 minus Red" value=3>3/8" minus Red</option>                                        
+                        <option name="1/2 minus Red" value=10>1/2" minus Red</option>                                        
+                        <option name="1 minus Red" value=10>1" minus Red"</option>                                        
+                    </select>                
+                </td>
+            </tr>
+        <!--
+            <tr>
+                <td>
+                    <label for="dims">Enter dimensions:</label>
+                </td>
+                <td>
+                    <input type="number" name="dim" id="mat-dim1" style="width: 68px"/>x
+                    <input type="number" name= "dim" id="mat-dim2" style="width: 68px;"/>
+                </td>
+            </tr>
+        -->
+            <tr>
+                <td>
+                    <label for="dims">Enter material quantity:</label>
+                </td>
+                <td>
+                    <input type="number" name= "qty" id="mat-qty" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="dims"></label>
+                </td>
+                <td>
+                    <button type="submit">Calculate</button>
+                </td>
+            </tr>
+        </table>
+        
+        <div id="map-canvas"></div>
+        <h4>This job will take <span id="jobTimeH">0</span> hours and <span id="jobTimeM">0</span> minutes and cost $<span id="jobCost">0</span>.</h4>
+        <script 
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQx6pm827fqu4mqxCWa9IBH8znTvcKQYI"
+        ></script>
+        <script src ="app.js"></script>
+    </form>
+    
+</body>
+</html>
